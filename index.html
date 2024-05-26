@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arbeitszeiten</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            background-color: #d6f5d6;
+        }
+        button {
+            background-color: #8aad8a;
+            color: white;
+            border: none;
+            font-size: 20px;
+            padding: 10px;
+        }
+
+        input {
+            border: 1px solid rgba(0,0,012);
+            height: 50px;
+            border-radius: 8px;
+        }
+
+        .list-item {
+            background-color: rgb(169, 221, 223);
+            padding: 16px;
+            border-radius: 8px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap:  16px;
+            margin-bottom: 16px;
+        }
+
+.small-img {
+    width: 24px;
+    height: 24px;
+}
+
+    </style>
+</head>
+<body>
+        <h1>Arbeitszeiten</h1>
+        <input id="myDate" placeholder="Datum einfügen" type="date">
+        <input id="myStartTime" placeholder="Startzeit einfügen" type="time">
+        <input id="myEndTime" placeholder="Endzeit einfügen" type="time">
+<button onclick="addWorktime()">Speichern</button>
+
+
+<div id="meineArbeitsstunden">
+
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
